@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    border-radius: 6px;
+    border-color: rgb(4, 119, 160);
+    border-width: 2px;
+    font-size: 22px;
+}
+
+select{
+    width: 195px;
+    height: 45px;
+    border-radius: 6px;
+    border-color:  rgb(4, 119, 160);
+    border-width: 2px;
+    font-size: 20px;
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 12px;
+    margin-right: 5px;
+    color: rgb(255,255,255);
+    font-size: 16px;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.row{
+    margin-top: 15px;
+}
+
+.navbar {
+    background-color: blue;
+    color: white;
+}
+
+.brand {
+    display: inline-block;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/* for mobile */
+@media only screen and (max-width: 600px) {
+    .brand {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 120px;
+        font-size: 18px;
+    }
+}
+
+/* for tablet */
+@media only screen and (min-width:600px) and (max-width:900px) {
+    .brand {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 150px;
+        font-size: 35px;
+    }
+}
+
+/* for laptop */
+@media only screen and (min-width: 900px) {
+    .brand {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 350px;
+        font-size: 35px;
+    }
+}
+
+/* Main form style */
+.main-form{ 
+    margin-top: 80px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.flex-container{
+    display: flex;
+    column-gap: 20px;
+}
+
+.flex-child{
+    width: 195px;
+}
+
+.body {
+    background-color: lightgoldenrodyellow;
+}
+
+
+.button1 {
+    background-color: rgb(24, 171, 10);
+    color: azure;
+}
+
+.button2 {
+    background-color: rgb(215, 2, 2);
+
+}
+
+.button3 {
+    background-color: rgb(48, 46, 46);
+
+}
+
+.ans-row{
+    margin-top: 50px;
+}
+
+.ans-input{
+    height: 80px;
+}
+
+/* Footer */
+/* .footer{
+    background-color: blue;
+    color: aliceblue;
+}
+.foot{
+    display: inline-block;
+    margin-top: 50vh;
+    margin-left: 350px;
+
+} */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <span class="brand"><i>Number Converter</i> </span>
+    </header>
+
+    <!-- Main form -->
+    <form class="main-form">
+        <div class="flex-container">
+            <div class="flex-child">
+                <label for="from">From:</label><br/>
+                <select name="from" id="from">
+                    <option value="binary">Binary</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+            <div class="flex-child">
+                <label for="to">To:</label><br />
+                <select name="to" id="to">
+                    <option value="binary">Binary</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="octal">Octal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+        </div>
+       
+        <div class="row">
+            <label for="number">Enter the number:</label><br />
+            <input type="text" id="number" name="number"/>
+        </div>
+
+        <div class="row">
+            <button class="button1">= convert</button>
+            <button class="button2"><span>× </span>reset</button>
+            <button class="button3"><span>⇅ </span>swap</button>
+        </div>
+
+        <div class="row ans-row">
+            <label for="number">Converted number:</label><br/>
+            <input class="ans-input" type="text" id="number" name="number" />
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <!-- <div class="footer">
+        <span class="foot">@Copyright tamalika <span>
+     </div> -->
+  </body>
+</html>
