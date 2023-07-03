@@ -3,31 +3,13 @@
     padding: 0;
 }
 
-input {
-    width: 400px;
-    height: 40px;
-    border-radius: 6px;
-    border-color: rgb(4, 119, 160);
-    border-width: 2px;
-    font-size: 22px;
-}
-
-select{
-    width: 195px;
-    height: 45px;
-    border-radius: 6px;
-    border-color:  rgb(4, 119, 160);
-    border-width: 2px;
-    font-size: 20px;
-}
-
 button{
     width: 90px;
-    height: 40px;
+    height: 45px;
     border-radius: 12px;
     margin-right: 5px;
-    color: rgb(255,255,255);
     font-size: 16px;
+    color: azure;
 }
 
 label{
@@ -36,13 +18,12 @@ label{
     font-size: 20px;
 }
 
-.row{
-    margin-top: 15px;
-}
 
+/* Design of header */
 .navbar {
     background-color: blue;
     color: white;
+    
 }
 
 .brand {
@@ -51,61 +32,47 @@ label{
     font-family: 'Lato', sans-serif;
 }
 
+/* Design of form  */
 
+/* Main form container */
 
-/* for mobile */
-@media only screen and (max-width: 600px) {
-    .brand {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 120px;
-        font-size: 18px;
-    }
-}
-
-/* for tablet */
-@media only screen and (min-width:600px) and (max-width:900px) {
-    .brand {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 150px;
-        font-size: 35px;
-    }
-}
-
-/* for laptop */
-@media only screen and (min-width: 900px) {
-    .brand {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 350px;
-        font-size: 35px;
-    }
-}
-
-/* Main form style */
-.main-form{ 
-    margin-top: 80px;
-    margin-left: 400px;
-    margin-right: 400px;
-}
+/*select section container */
 .flex-container{
     display: flex;
-    column-gap: 20px;
+    justify-content: space-between;
+    row-gap: 10px;
+    flex-wrap: wrap;
 }
 
 .flex-child{
-    width: 195px;
+    width: 49%;
 }
 
-.body {
-    background-color: lightgoldenrodyellow;
+.row{
+    margin-top: 15px;
 }
 
+
+input {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border-color: rgb(4, 119, 160);
+    border-width: 2px;
+    font-size: 22px;
+}
+
+select{
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    border-color:  rgb(4, 119, 160);
+    border-width: 2px;
+    font-size: 20px;
+}
 
 .button1 {
     background-color: rgb(24, 171, 10);
-    color: azure;
 }
 
 .button2 {
@@ -126,14 +93,62 @@ label{
     height: 80px;
 }
 
-/* Footer */
-/* .footer{
-    background-color: blue;
-    color: aliceblue;
-}
-.foot{
-    display: inline-block;
-    margin-top: 50vh;
-    margin-left: 350px;
 
-} */
+/* for mobile */
+@media only screen and (max-width: 600px) {
+    .brand {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 120px;
+        font-size: 18px;
+    }
+    .main-form{ 
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .flex-child{
+        width: 100%;
+    }
+    
+
+}
+
+/* for tablet */
+@media only screen and (min-width:600px) and (max-width:900px) {
+    .brand {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 150px;
+        font-size: 35px;
+    }
+    
+    .main-form{ 
+        margin-top: 80px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    
+
+}
+
+/* for laptop */
+@media only screen and (min-width: 900px) {
+    .brand {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 350px;
+        font-size: 35px;
+    }
+    .main-form{ 
+        margin-top: 80px;
+        margin-left: 25%;
+        margin-right: 25%;
+
+    }
+    
+}
+
+
