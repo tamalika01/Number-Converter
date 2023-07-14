@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Number Converter</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -174,9 +174,7 @@
       function show_error(error_msg) {
         // select error ele
         const error = document.getElementById("errorMsg");
-        // now error object m iske andr ka html m hai, no error, pr wo nhi dikhana hai, jo msg aya hai wo dikhana hai to update krne pdefa
         error.innerText = error_msg;
-        // now display=none hai isiliye dikh nhi rha, display block set kro, take dikhe
         error.style.display = "block";
       }
 
@@ -223,11 +221,11 @@
         const inputField = document.getElementById("inputField");
         const inputFieldvalue = inputField.value.trim();
         if (inputField.value.length == 0) {
-          show_error("Input field can not be empty");
+          show_error("Provide a value in input field to convert.");
           addInvalidStyle(inputField);
           return false;
         }
-        // now check if input field is matching correct regex accoring to type
+        // now check if input field is matching correct regex according to type
         console.log(inputFieldvalue)
         if(fromFieldVal=="binary")
         {
