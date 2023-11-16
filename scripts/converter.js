@@ -256,7 +256,7 @@
     const number1SelectElement = document.getElementById("inputField");
     number1SelectElement.value = "";
 
-    // reset answer input filed, ye kro same
+    // reset answer input filed
     const number2SelectElement = document.getElementById("answerField");
     number2SelectElement.value = "";
     // print status message in console
@@ -281,8 +281,6 @@
     // reset the input field
     document.getElementById("inputField").value = "";
 
-    // reset the answer field kya hu..nhi kr pa rhe hai...oo tb smjhi to nhi upr ka aur reset function
-    // kisi input field ko reset krna ho to us object ka bs value property ko "" set kr do,, hi to upr kro,, isiliye to
     document.getElementById("answerField").value = "";
   
     //remove any invalid messages and styles
