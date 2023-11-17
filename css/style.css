@@ -45,7 +45,7 @@ select {
 
 /* Design of header */
 .navbar {
-  background-color: blue;
+  background-color: rgb(72, 0, 255);
   color: white;
 }
 
